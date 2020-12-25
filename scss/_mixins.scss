@@ -1,0 +1,48 @@
+@mixin font($fs, $ff, $color, $fw) {
+        font-size: $fs;
+        font-family: $ff;
+        color: $color;
+        font-weight: $fw;
+        text-transform: uppercase;
+}
+@mixin button($bg, $color, $radius) {
+    background: $bg;
+    color: $color;
+    border-radius: $radius;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 250px;
+}
+@mixin btn($bg, $fs) {
+    background: $bg;
+    font-size: $fs;
+}
+@mixin div($bg, $color, $radius, $fs) {
+    background: $bg;
+    color: $color;
+    border-radius: $radius;
+    font-size: $fs;
+    padding: 25px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+@mixin header ($bg, $color,$fs) {
+    background: #6a92d7;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid #5368a6;
+    height: 50px;
+    font-size: $fs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin padd($padd...) {
+    padding: $padd;
+}
+@mixin mrg ($mrg...) {
+    margin: $mrg;
+}

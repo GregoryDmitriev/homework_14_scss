@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/ProximaNova-Bold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('../fonts/ProximaNova-Light.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SkolarCyrillic_Regular';
+    src:  url('../fonts/SkolarCyrillic_Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_VarelaRound-Regular';
+    src: url('../fonts/VarelaRound-Regular.woff'); 
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  background: url(../img/background.png);
+  color: #fff; }
+
+main {
+  height: calc(100vh - 30px);
+  width: 100%;
+  overflow: hidden; }
+  main .data {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: auto;
+    margin-top: 20px;
+    width: 1500px; }
+    @media (max-width: 1550px) {
+      main .data {
+        width: 1340px;
+        padding: 0 20px; } }
+    @media (max-width: 1340px) {
+      main .data {
+        width: 1200px; } }
+    @media (max-width: 1230px) {
+      main .data {
+        width: 1150px; } }
+    @media (max-width: 1170px) {
+      main .data {
+        width: 1000px; } }
+    @media (max-width: 1000px) {
+      main .data {
+        width: 960px; } }
+    @media (max-width: 970px) {
+      main .data {
+        width: 910px; } }
+    @media (max-width: 910px) {
+      main .data {
+        width: 870px; } }
+  main .Login .first,
+  main .Profile .first {
+    border-top: 1px solid #ccd9ed; }
+  main .Login .second,
+  main .Profile .second {
+    background: #678ccb;
+    color: #6e3140;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 250px;
+    border-top: 1px solid #93bbe2;
+    border-bottom: 1px solid #50629b; }
+  main .Login .third,
+  main .Profile .third {
+    background: #75afd8;
+    color: #b9dc75;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 250px;
+    border-top: 1px solid #a5d0e9;
+    border-bottom: 1px solid #4c5c94; }
+  main .Login .fourth,
+  main .Profile .fourth {
+    background: #65a98f;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 250px;
+    border-top: 1px solid #a5d0e9;
+    border-bottom: 1px solid #47578e; }
+  main .Login,
+  main .Profile,
+  main .Download,
+  main .location {
+    font-size: 20px;
+    font-family: ProximaNova-Bold;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #768ba9;
+    border-radius: 15px;
+    border: 1px solid #7a96b2;
+    box-sizing: border-box;
+    height: 385px;
+    width: 300px; }
+    @media (max-width: 1500px) {
+      main .Login,
+      main .Profile,
+      main .Download,
+      main .location {
+        height: 355px;
+        width: 270px; } }
+    @media (max-width: 1170px) {
+      main .Login,
+      main .Profile,
+      main .Download,
+      main .location {
+        height: 305px;
+        width: 220px; } }
+    @media (max-width: 970px) {
+      main .Login,
+      main .Profile,
+      main .Download,
+      main .location {
+        height: 290px;
+        width: 205px; } }
+    main .Login .btn,
+    main .Profile .btn,
+    main .Download .btn,
+    main .location .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      height: 272px;
+      margin: 32px 0; }
+    main .Login button,
+    main .Profile button,
+    main .Download button,
+    main .location button {
+      font-size: 20px;
+      font-family: ProximaNova-Bold;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #bdcee5;
+      color: #8f5757;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      height: 60px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .Login header,
+    main .Profile header,
+    main .Download header,
+    main .location header {
+      background: #6a92d7;
+      color: #fff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom: 1px solid #5368a6;
+      height: 50px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 970px) {
+        main .Login header,
+        main .Profile header,
+        main .Download header,
+        main .location header {
+          font-size: 16px; } }
+  @media (max-width: 1500px) {
+    main .Login .btn {
+      height: 250px;
+      margin: 29px 0; } }
+  @media (max-width: 1170px) {
+    main .Login .btn {
+      height: 200px;
+      margin: 25px 0; } }
+  @media (max-width: 1170px) {
+    main .Login .btn button {
+      height: 40px;
+      width: 200px; } }
+  @media (max-width: 970px) {
+    main .Login .btn button {
+      height: 40px;
+      width: 165px;
+      font-size: 16px; } }
+  @media (max-width: 970px) {
+    main .Login .btn {
+      height: 190px; } }
+  @media (max-width: 1500px) {
+    main .Login .first,
+    main .Login .second,
+    main .Login .third,
+    main .Login .fourth {
+      height: 45px;
+      width: 235px; } }
+  main .Profile header {
+    background: #9b8e75; }
+  main .Profile .btn {
+    height: 192px; }
+    @media (max-width: 970px) {
+      main .Profile .btn {
+        height: 142px; } }
+  main .Profile .first,
+  main .Profile .second,
+  main .Profile .third,
+  main .Profile .fourth {
+    height: 42px;
+    width: 174px;
+    font-size: 16px; }
+    @media (max-width: 970px) {
+      main .Profile .first,
+      main .Profile .second,
+      main .Profile .third,
+      main .Profile .fourth {
+        height: 32px;
+        width: 144px; } }
+  main .Download {
+    background: #4c5868; }
+    main .Download header {
+      background: #4c8d6f; }
+  main .location {
+    background: #4c5868;
+    height: 144px; }
+    main .location header {
+      background: #a6a075; }

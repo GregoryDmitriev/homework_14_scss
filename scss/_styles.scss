@@ -1,0 +1,187 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    background:$backgroundColor;
+    color: #fff;
+}
+
+main {
+    height: calc(100vh - 30px);
+    width: 100%;
+    overflow: hidden;
+    .data {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: auto;
+        margin-top: 20px;
+        width: 1500px;
+        @include media ('<=1550px') {
+            width: 1340px;
+            padding: 0 20px;
+        }
+        @include media ('<=1340px'){
+            width: 1200px;
+        }
+        @include media ('<=1230px') {
+            width: 1150px;
+        }
+        @include media ('<=1170px') {
+            width: 1000px;
+        }
+        @include media ('<=1000px') {
+            width: 960px;
+        }
+        @include media ('<=970px') {
+            width: 910px;
+        }
+        @include media ('<=910px') {
+            width: 870px;
+        }
+    }
+    .Login, 
+    .Profile {
+        .first {
+            border-top: 1px solid #ccd9ed;
+        }
+        .second {
+            @include button(#678ccb, #6e3140, 10px);
+            border-top: 1px solid #93bbe2;
+            border-bottom: 1px solid #50629b;
+        }
+        .third {
+            @include button(#75afd8, #b9dc75, 10px);
+            border-top: 1px solid #a5d0e9;
+            border-bottom:1px solid#4c5c94;
+        }
+        .fourth {
+            @include button(#65a98f, #fff, 10px);
+            border-top: 1px solid#a5d0e9;
+            border-bottom: 1px solid#47578e;
+        }
+    }
+
+    .Login,
+    .Profile,
+    .Download,
+    .location {
+        @include font($font-medium, ProximaNova-Bold, #fff, bold);
+        background:#768ba9;
+        border-radius: 15px;
+        border: 1px solid #7a96b2;
+        box-sizing:border-box;
+        height: $divHight;
+        width: $divWidht;
+        @include media ('<=1500px') {
+            height: 355px;
+            width: 270px;
+        }
+        @include media ('<=1170px') {
+            height: 305px;
+            width: 220px;
+        }
+        @include media ('<=970px') {
+            height: 290px;
+            width: 205px;
+        }
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 272px;
+            @include mrg (32px 0);
+        }
+        button {
+            @include font(20px, ProximaNova-Bold, #fff, bold);
+            @include button(#bdcee5, #8f5757, 10px);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        
+        header{
+            @include header(#567, #089, $font-medium);
+            @include media ('<=970px') {
+                font-size: $font-small;
+            }
+        }
+
+    }
+    .Login {
+        .btn {
+            @include media ('<=1500px') {
+                height: 250px;
+                @include mrg (29px 0);
+            }
+            @include media ('<=1170px') {
+                height: 200px;
+                @include mrg (25px 0);
+            }
+            button {
+                @include media ('<=1170px') {
+                    height: 40px;
+                    width: 200px;
+                }
+                @include media ('<=970px') {
+                    height: 40px;
+                    width: 165px;
+                    font-size: $font-small;
+                }
+            }
+            @include media ('<=970px') {
+                height: 190px;
+            }
+        }
+        .first,
+        .second,
+        .third,
+        .fourth {
+            @include media ('<=1500px') {
+                height: 45px;
+                width: 235px;
+                }
+        }
+    }
+        
+    .Profile {
+        header {
+            background: #9b8e75;
+        }
+        .btn {
+            height: 192px;
+            @include media ('<=970px') {
+                height: 142px;
+            }
+        }
+        .first,
+        .second,
+        .third,
+        .fourth {
+            height: 42px;
+            width: 174px;
+            @include media ('<=970px') {
+                height: 32px;
+                width: 144px;
+            }
+            font-size: $font-small;
+        }
+    }
+    .Download {
+        background: #4c5868;
+        header{
+            background: #4c8d6f;
+        }
+    }
+    .location {
+        background: #4c5868;
+        height: 144px;
+        header{
+            background: #a6a075;
+        }
+    }
+}
